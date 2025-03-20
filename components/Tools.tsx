@@ -50,9 +50,9 @@ const Tools = () => {
           "xl:text-left xl:text-5xl xl:leading-[1.4]",
           "pointer-events-none whitespace-pre-wrap",
         )}><span className='text-primary'>{stacksData.length}</span> Outils au Service <br className="hidden lg:block" />de l'Excellence</h2>
-        <p className={cn("text-base text-center text-subtitle/80 font-light w-full px-4", "lg:text-base lg:w-[500px] lg:mx-auto", "xl:mx-0 xl:text-left xl:px-0 xl:pb-2 xl:text-lg xl:leading-relaxed")}>Je combine des technologies de pointe et des outils reconnus pour concevoir des boutiques performantes et sur-mesure.</p>
+        <p className={cn("text-base text-center text-subtitle/80 font-light w-full px-4", "lg:text-base lg:w-[500px] lg:mx-auto", "xl:mx-0 xl:text-left xl:px-0 xl:pb-2 xl:text-lg xl:leading-relaxed")}>Nous combinons des technologies de pointe et des outils reconnus pour concevoir des automatisations performantes et sur-mesure.</p>
         <div className={cn("pt-4")}>
-          <Link href="https://cal.com/sejiux/appel-de-decouverte" rel="preload" className={cn(
+          <Link href="https://calendly.com/novai-agency25/30min" rel="preload" className={cn(
             "text-white font-medium", 
             "w-[80%] h-12 mx-auto",
             "md:w-[60%] md:h-14",

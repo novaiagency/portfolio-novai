@@ -44,7 +44,7 @@ const Processus = () => {
         )}>Votre Succès, une Méthode en <span className='text-primary'>6</span> Étapes</h2>
         <p className={cn("text-base text-center font-light w-full px-4", "xl:text-left xl:px-0 text-subtitle/80 xl:pb-2 xl:w-[500px] xl:text-lg xl:leading-relaxed")}>Un accompagnement sur mesure et des étapes clés pour automatiser et optimiser votre activité avec nos agents.</p>
         <div className={cn("pt-4")}>
-          <Link href="https://cal.com/sejiux/appel-de-decouverte" rel="preload" className={cn(
+          <Link href="https://calendly.com/novai-agency25/30min" rel="preload" className={cn(
             "text-white font-medium", 
             "w-[80%] h-12 mx-auto",
             "md:w-[60%] md:h-14",

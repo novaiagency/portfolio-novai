@@ -22,16 +22,16 @@ export default function Home() {
         "@context": "https://schema.org",
         "@type": "Organization",
         name: "sejiux",
-        url: "https://sejiux.com",
+        url: "https://novai.agency/",
         logo: "https://sejiux.com/images/sejiux.webp",
         description: "Je crée des boutiques en ligne headless sur mesure, combinant design unique et performance.",
         sameAs: [
-          "https://twitter.com/sejiux",
+          "https://x.com/NovaiAgency",
           "https://github.com/sejiux",
-          "https://linkedin.com/company/sejiux",
+          "https://www.linkedin.com/company/novaiagency",
           "https://medium.com/@selimbaouz",
-          "https://pinterest.com/sejiux",
-          "https://facebook.com/im.sejiux",
+          "https://www.instagram.com/novai_agency",
+          "https://www.facebook.com/people/Novai-Agency/61572557372194",
         ]
       }}
     /></>;
@@ -48,25 +48,25 @@ export default function Home() {
         <Tools />
       </Suspense>
       <Suspense>
-        <Benefit />
-      </Suspense>
-      <Suspense>
         <Processus />
       </Suspense>
       <Suspense>
         <Price />
       </Suspense>
       <Suspense>
-        <About />
+        <Benefit />
       </Suspense>
       <Suspense>
-        <WhyMe />
+        <About />
       </Suspense>
       <Suspense>
         <FAQ />
       </Suspense>
+                         {/* a supprimer  <Whyme /> */}
+
+                          {/* a supprimer <Blog /> */}
       <Suspense>
-        <Blog />
+       
       </Suspense>
       <Suspense>
         <Footer />

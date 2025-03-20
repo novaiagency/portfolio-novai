@@ -75,8 +75,8 @@ export const FAQsData = [
     content: "1. Analyse précise de vos besoins 2. Conception du workflow adapté 3. Développement technique (JavaScript & no-code) et intégration API 4. Tests approfondis et validation 5. Déploiement officiel avec formation utilisateur 6. Suivi continu et maintenance", 
   },
   {
-    title: "Combien ça coûte ?", 
-    content: "Le coût dépend de la complexité, du nombre d'intégrations API et du volume traité. Mise en place initiale dès 300 € (simple), 1 500 à 5 000 € (avancée), jusqu'à +10 000 € (complexe). Maintenance mensuelle dès 150 €/mois selon consommation API. Devis précis après analyse.", 
+    title: "Quelles sont les étapes clés pour mettre en place une solution sur mesure ?", 
+    content: "La mise en place d'une solution sur mesure suit un processus structuré pour garantir son succès. Cela commence par une analyse approfondie de vos besoins et la définition des objectifs. Ensuite, les équipes conçoivent une solution adaptée en choisissant les technologies appropriées et en élaborant des maquettes.", 
   },
   {
     title: "Combien de temps cela prend-il ?", 
@@ -219,9 +219,9 @@ export const BenefitsData = [
     title: "Engagement Client", 
   },
   {
-    symbole: "+", 
+    symbole: "-", 
     percentage: "80",
-    title: "Identité renforcée", 
+    title: "coûts liés au service client", 
   },
 ];
 
@@ -297,7 +297,7 @@ export const PricesFixeData = [
   {
     title: "Offre basique", 
     content: "Automatisez emails, relances paniers et notifications pour simplifier la gestion client.",
-    link: "https://cal.com/sejiux/appel-de-decouverte",
+    link: "https://calendly.com/novai-agency25/30min",
     options: [
       {
         title: "Mise en place de réponses automatiques aux emails clients"
@@ -313,7 +313,7 @@ export const PricesFixeData = [
   {
     title: "Offre intermédiaire", 
     content: "Ajoutez un chatbot, gérez stocks et expéditions, et planifiez vos campagnes.",
-    link: "https://cal.com/sejiux/appel-de-decouverte",
+    link: "https://calendly.com/novai-agency25/30min",
     options: [
       {
         title: "Mise en place de réponses automatiques aux emails clients"
@@ -406,7 +406,15 @@ export const legalsPagesData = (handle: string) => {
       data: [
         {
           title: "1. Informations légales",
-          content: `Créateur du site : Sélim Baouz
+          content: `Forme juridique : Auto-entrepreneur
+Adresse : Rue de la Tour, 57100 Thionville
+Email : novai.agency25@gmail.com
+Immatriculation :
+Numéro RCS : Thionville A 842 876 757
+Numéro TVA intracommunautaire : FR 42 842876757
+Numéro SIRET du siège : 842 876 757 00019 
+
+            Créateur du site : Sélim Baouz
             Responsable de publication : Sélim Baouz
             Adresse : 5 rue marcel sembat 83200 Toulon
             Email : im.sejiux@gmail.com
@@ -420,11 +428,13 @@ export const legalsPagesData = (handle: string) => {
         },
         {
           title: "3. Propriété intellectuelle",
-          content: `Tous les contenus présents sur ce site (textes, images, vidéos, logos, etc.) sont protégés par les lois relatives à la propriété intellectuelle. Toute reproduction, totale ou partielle, sans autorisation écrite est interdite.`,
+          content: `L'ensemble du contenu du site (textes, images, vidéos, logos, etc.) est la propriété exclusive de Novai Agency ou fait l'objet d'une autorisation d'utilisation. Toute reproduction, représentation, modification ou adaptation totale ou partielle du site ou de son contenu, par quelque procédé que ce soit et sur quelque support que ce soit, est strictement interdite sans l'autorisation écrite préalable de Novai Agency.`,
         },
         {
-          title: "4. Paiements sécurisés avec Stripe",
-          content: `Les paiements effectués sur ce site sont redirigés vers **Stripe Checkout**. Stripe est responsable de la collecte et du traitement des données de paiement sur son propre domaine sécurisé. Pour plus d'informations, veuillez consulter [la politique de confidentialité de Stripe](https://stripe.com/fr/privacy).`,
+          title: "4. DONNÉES PERSONNELLES",
+          content: `Conformément à la loi Informatique et Libertés du 6 janvier 1978 modifiée et au Règlement Général sur la Protection des Données (RGPD), vous disposez de droits d'accès, de rectification, d'effacement, de limitation et d'opposition au traitement de vos données personnelles. Vous pouvez exercer ces droits en nous contactant par email à [email de contact RGPD] ou par courrier à l'adresse du siège social de Novai Agency.
+Pour en savoir plus sur la gestion de vos données et vos droits, veuillez consulter notre Politique de Confidentialité accessible depuis notre site web
+.`,
         },
         {
           title: "5. Collecte et traitement des données",
@@ -432,11 +442,11 @@ export const legalsPagesData = (handle: string) => {
         },
         {
           title: "6. Cookies",
-          content: `Aucun cookie n'est utilisé pour collecter des données personnelles. Cependant, des cookies techniques peuvent être générés pour le fonctionnement des services analytiques.`,
+          content: `Aucun cookie n'est utilisé pour collecter des données personnelles. Cependant, des cookies techniques peuvent être générés pour le fonctionnement des services analytiques, Lors de votre navigation sur notre site, des cookies peuvent être déposés sur votre terminal. Ces cookies sont utilisés pour faciliter votre navigation, permettre certaines fonctionnalités et nous aider à améliorer nos services. Vous pouvez paramétrer votre navigateur pour refuser les cookies ou être alerté lors de leur utilisation.`,
         },
         {
           title: "7. Droit applicable",
-          content: `Les présentes mentions légales sont régies par le droit français. En cas de litige, les tribunaux compétents seront ceux de Toulon.`,
+          content: `Les présentes mentions légales sont régies par le droit français. En cas de litige, les tribunaux français seront seuls compétents.`,
         },
       ],
     };

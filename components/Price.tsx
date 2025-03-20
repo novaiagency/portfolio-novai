@@ -54,39 +54,36 @@ const Price = () => {
           ))}
           <div className="col-span-2 max-w-xl w-full mx-auto">
             <CardPrice
-              title="Maintenance"
-              content="Bénéficiez d'un support technique pour une expérience utilisateur optimale."
-              link="https://cal.com/sejiux/appel-de-decouverte"
+              title="Offre avancée"
+              content="Utilisez l’IA pour le service client, les publicités dynamiques et l’optimisation SEO."
+              link="https://calendly.com/novai-agency25/30min"
               options={[
                 {
-                  title: "Support client disponible 5j/7",
+                  title: "Mise en place de réponses automatiques aux emails clients"
                 },
                 {
-                  title: "Réponse sous 24 heures",
+                  title: "Automatisation des relances paniers abandonnés"
                 },
                 {
-                  title: "Optimisation des performances",
+                  title: "Notifications automatiques sur les commandes"
                 },
                 {
-                  title: "Correction des bugs",
+                  title: "Ajout d’un chatbot pour le service client 24/7"
                 },
                 {
-                  title: "Mises à jour de sécurité",
+                  title: "Gestion automatisée du stock et création d’étiquettes d’expédition"
                 },
                 {
-                  title: "Transfert d'hébergement",
+                  title: "Campagnes email marketing planifiées"
                 },
                 {
-                  title: "Migration des données",
+                  title: "Intégration complète d’un agent IA pour le service client (chatbot avancé)",
                 },
                 {
-                  title: "Changement de nom de domaine",
+                  title: "Publicités dynamiques basées sur les données du stock",
                 },
                 {
-                  title: "Gestion des DNS",
-                },
-                {
-                  title: "Suivi et optimisation SEO",
+                  title: "Optimisation SEO automatisée et surveillance concurrentielle",
                 },
               ]}
             />

@@ -57,7 +57,7 @@ const HeaderPage = () => {
         <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle/80 lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed xl:w-[700px]")}>Optimisez votre productivité en déléguant des tâches à nos agent iA et focalisez-vous sur ce qui compte vraiment.
         </p>
         <div className={cn("pt-4")}>
-          <Link href="https://cal.com/sejiux/appel-de-decouverte" target="_blank" rel="preload" className={cn(
+          <Link href="https://calendly.com/novai-agency25/30min" target="_blank" rel="preload" className={cn(
             "text-white font-medium", 
             "w-[80%] h-12 mx-auto",
             "md:w-[60%] md:h-14",
