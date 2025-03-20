@@ -29,10 +29,7 @@ const About = () => {
         </div>
         <p className={cn("text-base font-light w-full", "lg:text-left lg:text-base text-subtitleCard lg:w-[500px]", "xl:px-0 xl:pb-2 xl:text-lg xl:leading-relaxed")}>
         Chez Novai Agency, nous aidons les entreprises à se démarquer grâce à des stratégies digitales innovantes et personnalisées. Notre équipe passionnée met son expertise au service de votre croissance, en créant des expériences uniques qui génèrent du résultat.
-
-Notre mission est simple : transformer votre vision en succès concret. Nous croyons en la créativité, l'efficacité et la transparence pour bâtir des relations durables avec nos clients.
-
-<br />Prêt à passer au niveau supérieur ? Rejoignez-nous dès aujourd'hui !</p>
+        Notre mission est simple : transformer votre vision en succès concret. Nous croyons en la créativité, l'efficacité et la transparence pour bâtir des relations durables avec nos clients.<br />Prêt à passer au niveau supérieur ? Rejoignez-nous dès aujourd'hui !</p>
         <div className={cn("pt-4 flex flex-col items-center gap-4", "lg:flex-row")}>
           <Link href="https://calendly.com/novai-agency25/30min" rel="preload" target="_blank"
             className={cn(

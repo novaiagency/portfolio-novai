@@ -10,9 +10,9 @@ const Benefit = lazy(() => import("@/components/Benefit"));
 const Processus = lazy(() => import("@/components/Processus"));
 const Price = lazy(() => import("@/components/Price"));
 const About = lazy(() => import("@/components/About"));
-const WhyMe = lazy(() => import("@/components/WhyMe"));
+// const WhyMe = lazy(() => import("@/components/WhyMe"));
 const FAQ = lazy(() => import("@/components/FAQ"));
-const Blog = lazy(() => import("@/components/Blog"));
+// const Blog = lazy(() => import("@/components/Blog"));
 const Footer = lazy(() => import("@/components/Footer"));
 
 export default function Home() {
@@ -61,12 +61,6 @@ export default function Home() {
       </Suspense>
       <Suspense>
         <FAQ />
-      </Suspense>
-                         {/* a supprimer  <Whyme /> */}
-
-                          {/* a supprimer <Blog /> */}
-      <Suspense>
-       
       </Suspense>
       <Suspense>
         <Footer />
