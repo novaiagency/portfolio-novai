@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/moving-border";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import GridPattern from "./ui/grid-pattern";
-import { SiShopify } from "react-icons/si";
 import NavBar from "./NavBar";
 import { useState } from "react";
 import { ModalMenu } from "./ModalMenu";
