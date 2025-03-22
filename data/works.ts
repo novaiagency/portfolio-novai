@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 import { FaRocket} from "react-icons/fa6";
 import { FaGithub, FaTwitter, FaFigma, FaPaintBrush, FaHeadphonesAlt, FaSearch, FaMoneyBillAlt } from "react-icons/fa";
 import { SiAirtable, SiNotion, SiOpenai, SiN8N, SiGoogle, SiCalendly, SiZapier, SiSlack, SiStripe, SiTwilio, SiDropbox, SiHubspot, SiMailchimp, SiSalesforce, SiWoocommerce, SiPaypal, SiTrello, SiClickup, SiGooglesheets, SiShopify } from "react-icons/si";
 import { RiCodeSSlashLine, RiHomeSmile2Fill, RiRobot2Fill, RiServiceFill, RiUser5Fill } from "react-icons/ri";
 import { AiOutlineSketch } from "react-icons/ai";
+=======
+import { FaCode, FaJira, FaLock, FaRocket, FaShopify } from "react-icons/fa6";
+import { FaGithub, FaDiscord, FaMedium, FaTwitter, FaHtml5, FaCss3, FaReact, FaFigma, FaPinterest, FaTachometerAlt, FaPaintBrush, FaHeadphonesAlt, FaSearch, FaMoneyBillAlt } from "react-icons/fa";
+import { SiTypescript, SiNextdotjs, SiZod, SiPrisma, SiBlender, SiGreensock, SiGit, SiFramer, SiReactquery, SiResend, SiReacthookform, SiTailwindcss, SiShadcnui, SiShopify, SiVercel, SiGithub, SiSocketdotio, SiGraphql, SiStrapi, SiAirtable, SiNotion, SiOpenai, SiN8N, SiGoogle, SiCalendly, SiFathom, SiZapier, SiSlack, SiStripe, SiTwilio, SiDropbox, SiHubspot, SiMailchimp, SiSalesforce, SiWoocommerce, SiPaypal, SiTrello, SiClickup, SiGooglesheets } from "react-icons/si";
+import { RiBearSmileLine, RiCodeSSlashLine, RiHomeSmile2Fill, RiRobot2Fill, RiServiceFill, RiUser5Fill } from "react-icons/ri";
+import { AiOutlineAppstore, AiOutlineSketch } from "react-icons/ai";
+>>>>>>> 0168cb42bd5e30be4da577893f197326bafd9d42
 import { IoClose, IoShield } from "react-icons/io5";
 import { FiZap } from "react-icons/fi";
 import { TfiBarChart } from "react-icons/tfi";
@@ -23,6 +31,11 @@ import BlogIp from "@/public/images/blog-ip.webp";
 import BlogListening from "@/public/images/blog-active-listening.webp";
 import BlogMindset from "@/public/images/blog-mindset.webp";
 import { IoMdTime } from "react-icons/io";
+<<<<<<< HEAD
+=======
+import { title } from "process";
+import { Content } from "next/font/google";
+>>>>>>> 0168cb42bd5e30be4da577893f197326bafd9d42
 
 export const ServicesData = [
   {
@@ -339,10 +352,26 @@ export const PricesFixeData = [
 
 export const socialsData = [
   {
+<<<<<<< HEAD
     link: "https://github.com/novaiagency", icon: FaGithub, label: "Github",
   },
   {
     link: "https://x.com/NovaiAgency", icon: FaTwitter, label: "Twitter",
+=======
+    link: "https://github.com/sejiux", icon: FaGithub, label: "Github",
+  },
+  {
+    link: "https://discordapp.com/users/849428669180542976", icon: FaDiscord, label: "Discord",
+  },
+  {
+    link: "https://medium.com/@selimbaouz", icon: FaMedium, label: "Medium",
+  },
+  {
+    link: "https://www.pinterest.fr/sejiux/", icon: FaPinterest, label: "Pinterest",
+  },
+  {
+    link: "https://x.com/sejiux", icon: FaTwitter, label: "Twitter",
+>>>>>>> 0168cb42bd5e30be4da577893f197326bafd9d42
   }
 ];
 
@@ -398,6 +427,7 @@ export const legalsPagesData = (handle: string) => {
         {
           title: "1. Informations légales",
           content: `Forme juridique : Auto-entrepreneur
+<<<<<<< HEAD
             Adresse : Rue de la Tour, 57100 Thionville
             Email : novai.agency25@gmail.com
             Immatriculation :
@@ -408,6 +438,19 @@ export const legalsPagesData = (handle: string) => {
             Responsable de publication : Sejiux Studio
             Adresse : 5 rue marcel sembat 83200 Toulon
             Email : novai.agency25@gmail.comI
+=======
+Adresse : Rue de la Tour, 57100 Thionville
+Email : novai.agency25@gmail.com
+Immatriculation :
+Numéro RCS : Thionville A 842 876 757
+Numéro TVA intracommunautaire : FR 42 842876757
+Numéro SIRET du siège : 842 876 757 00019 
+
+            Créateur du site : Sélim Baouz
+            Responsable de publication : Sélim Baouz
+            Adresse : 5 rue marcel sembat 83200 Toulon
+            Email : im.sejiux@gmail.com
+>>>>>>> 0168cb42bd5e30be4da577893f197326bafd9d42
             Numéro SIRET : 83012126500037`,
         },
         {
@@ -664,6 +707,14 @@ export const stacksData = [
     link: "https://GOOGLE.com/"
   },
   {
+<<<<<<< HEAD
+=======
+    icon: SiNextdotjs,
+    name: "NextJs",
+    link: "https://nextjs.org/"
+  },
+  {
+>>>>>>> 0168cb42bd5e30be4da577893f197326bafd9d42
     icon: SiCalendly,
     name: "Calendly",
     link: "https://calendly.com/"
@@ -674,6 +725,19 @@ export const stacksData = [
     link: "https://zapier.com/"
   },
   {
+<<<<<<< HEAD
+=======
+    icon: SiStrapi,
+    name: "Strapi",
+    link: "https://strapi.io/"
+  },
+  {
+    icon: SiGraphql,
+    name: "GraphQL",
+    link: "https://graphql.org/"
+  },
+  {
+>>>>>>> 0168cb42bd5e30be4da577893f197326bafd9d42
     icon: IoShield,
     name: "NextAuth",
     link: "https://next-auth.js.org/"
@@ -714,6 +778,14 @@ export const stacksData = [
     link: "https://www.salesforce.com/"
   },
   {
+<<<<<<< HEAD
+=======
+    icon: SiFramer,
+    name: "Framer motion",
+    link: "https://www.framer.com/motion/"
+  },
+  {
+>>>>>>> 0168cb42bd5e30be4da577893f197326bafd9d42
     icon: SiShopify,
     name: "Shopify",
     link: "https://www.shopify.com/"

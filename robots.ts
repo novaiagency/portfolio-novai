@@ -7,6 +7,10 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
+<<<<<<< HEAD
     sitemap: 'https://novai.agency/sitemap.xml',
+=======
+    sitemap: 'https://sejiux.com/sitemap.xml',
+>>>>>>> 0168cb42bd5e30be4da577893f197326bafd9d42
   };
 }

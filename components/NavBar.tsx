@@ -48,6 +48,7 @@ const NavBar = ({isMenuOpen, setIsMenuOpen}: NavBarProps) => {
   return (
     <nav className={cn("w-full flex justify-center items-center px-10 pt-6 fixed z-[55]", "lg:pt-8")}>
       <div className={cn("w-full flex items-center justify-between rounded-[10px] gap-4 border border-neutral-600/50 backdrop-blur-md bg-gradient-to-b from-background/50 to-[#151518] py-3 px-4", "md:w-auto md:hidden")}>
+<<<<<<< HEAD
         <div className='w-4' />
         <Link href="/" rel="preload" className='flex gap-4 items-center'>
           <Image 
@@ -60,6 +61,18 @@ const NavBar = ({isMenuOpen, setIsMenuOpen}: NavBarProps) => {
               maxWidth: "90px"
             }}
           />
+=======
+        <Link href="/" rel="preload" className='flex gap-4 items-center'>
+          <div className="p-10 border">
+            <Image 
+              src={"/images/novai.png"} 
+              alt="Logo of Novai" 
+              width={2048}
+              height={2048}
+              className='w-[20px] h-[10px]'
+            />
+          </div>
+>>>>>>> 0168cb42bd5e30be4da577893f197326bafd9d42
         </Link>
         <button
           className={cn("text-2xl", "lg:hidden")}

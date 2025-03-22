@@ -11,37 +11,62 @@ const Services = () => {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
+<<<<<<< HEAD
     "name": "Automatisation et Agents IA sur Mesure",
     "description": "Automatisez vos processus et optimisez votre productivité avec des agents IA et des workflows intelligents.",
     "provider": {
       "@type": "Organization",
       "name": "Novai Agency"
+=======
+    "name": "Boutique Headless Sur Mesure",
+    "description": "Création de boutiques en ligne headless sur mesure pour les marques",
+    "provider": {
+      "@type": "Person",
+      "name": "Sélim Baouz"
+>>>>>>> 0168cb42bd5e30be4da577893f197326bafd9d42
     },
     "areaServed": "Worldwide",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
+<<<<<<< HEAD
       "name": "Solutions d'Automatisation et Agents IA",
+=======
+      "name": "Services de création de boutiques headless",
+>>>>>>> 0168cb42bd5e30be4da577893f197326bafd9d42
       "itemListElement": [
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
+<<<<<<< HEAD
             "name": "Automatisation des Processus",
             "description": "Optimisez vos tâches répétitives avec des workflows automatisés via Make et n8n."
+=======
+            "name": "Boutique Mono-Produit",
+            "description": "Une boutique monoproduit impactante, conçue pour convertir vos visiteurs en clients."
+>>>>>>> 0168cb42bd5e30be4da577893f197326bafd9d42
           }
         },
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
+<<<<<<< HEAD
             "name": "Agents IA Personnalisés",
             "description": "Déployez des agents IA adaptés à vos besoins pour gérer vos tâches et améliorer votre efficacité."
+=======
+            "name": "Boutique Multi-Produit",
+            "description": "Une boutique multiproduit qui met en valeur chaque produit avec clarté et efficacité."
+>>>>>>> 0168cb42bd5e30be4da577893f197326bafd9d42
           }
         }
       ]
     }
   };
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0168cb42bd5e30be4da577893f197326bafd9d42
   return (
     <>
       <JsonLd data={jsonLd} />
