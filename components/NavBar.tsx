@@ -5,7 +5,6 @@ import Link from "next/link";
 import { IoMdClose } from "react-icons/io";
 import Image from 'next/image';
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
-import Logo from "@/public/images/novai.png";
 import { linksData } from '@/data/works';
 
 interface NavBarProps {
@@ -49,15 +48,16 @@ const NavBar = ({isMenuOpen, setIsMenuOpen}: NavBarProps) => {
   return (
     <nav className={cn("w-full flex justify-center items-center px-10 pt-6 fixed z-[55]", "lg:pt-8")}>
       <div className={cn("w-full flex items-center justify-between rounded-[10px] gap-4 border border-neutral-600/50 backdrop-blur-md bg-gradient-to-b from-background/50 to-[#151518] py-3 px-4", "md:w-auto md:hidden")}>
-        <div> </div>
         <Link href="/" rel="preload" className='flex gap-4 items-center'>
-          <Image 
-            src={Logo} 
-            alt="Logo of Novai" 
-            width={2048} 
-            height={2048} 
-            className=' w-7 h-5 '
-          />
+          <div className="p-10 border">
+            <Image 
+              src={"/images/novai.png"} 
+              alt="Logo of Novai" 
+              width={2048}
+              height={2048}
+              className='w-[20px] h-[10px]'
+            />
+          </div>
         </Link>
         <button
           className={cn("text-2xl", "lg:hidden")}

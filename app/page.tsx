@@ -1,19 +1,27 @@
-import { lazy, Suspense } from "react";
+import { Suspense } from "react";
 import { JsonLd } from 'react-schemaorg';
-import dynamic from "next/dynamic";
+import HeaderPage from "@/components/Header";
+import Services from "@/components/Services";
+import Tools from "@/components/Tools";
+import Processus from "@/components/Processus";
+import Price from "@/components/Price";
+import Benefit from "@/components/Benefit";
+import About from "@/components/About";
+import FAQ from "@/components/FAQ";
+import Footer from "@/components/Footer";
 
 /* export const runtime = 'edge'; */
-const Header = dynamic(() => import("@/components/Header"));
-const Services = lazy(() => import("@/components/Services"));
-const Tools = lazy(() => import("@/components/Tools"));
-const Benefit = lazy(() => import("@/components/Benefit"));
-const Processus = lazy(() => import("@/components/Processus"));
-const Price = lazy(() => import("@/components/Price"));
-const About = lazy(() => import("@/components/About"));
+// const Header = dynamic(() => import("@/components/Header"));
+// const Services = lazy(() => import("@/components/Services"));
+// const Tools = lazy(() => import("@/components/Tools"));
+// const Benefit = lazy(() => import("@/components/Benefit"));
+// const Processus = lazy(() => import("@/components/Processus"));
+// const Price = lazy(() => import("@/components/Price"));
+// const About = lazy(() => import("@/components/About"));
 // const WhyMe = lazy(() => import("@/components/WhyMe"));
-const FAQ = lazy(() => import("@/components/FAQ"));
+// const FAQ = lazy(() => import("@/components/FAQ"));
 // const Blog = lazy(() => import("@/components/Blog"));
-const Footer = lazy(() => import("@/components/Footer"));
+// const Footer = lazy(() => import("@/components/Footer"));
 
 export default function Home() {
   <>
@@ -39,30 +47,14 @@ export default function Home() {
   return (
     <div className="space-y-24 lg:space-y-44">
       <Suspense>
-        <Header />
-      </Suspense>
-      <Suspense>
+        <HeaderPage />
         <Services />
-      </Suspense>
-      <Suspense>
         <Tools />
-      </Suspense>
-      <Suspense>
         <Processus />
-      </Suspense>
-      <Suspense>
         <Price />
-      </Suspense>
-      <Suspense>
         <Benefit />
-      </Suspense>
-      <Suspense>
         <About />
-      </Suspense>
-      <Suspense>
         <FAQ />
-      </Suspense>
-      <Suspense>
         <Footer />
       </Suspense>
     </div>

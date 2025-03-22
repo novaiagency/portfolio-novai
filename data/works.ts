@@ -23,6 +23,8 @@ import BlogIp from "@/public/images/blog-ip.webp";
 import BlogListening from "@/public/images/blog-active-listening.webp";
 import BlogMindset from "@/public/images/blog-mindset.webp";
 import { IoMdTime } from "react-icons/io";
+import { title } from "process";
+import { Content } from "next/font/google";
 
 export const ServicesData = [
   {
@@ -394,7 +396,7 @@ export const legalsLinksData = [
     link: "/legals/terms-and-conditions", label: "Conditions générales de vente",
   },
   {
-    link: "/legals/cookie-policy", label: "Politique de cookies",
+    link: "/legals/cgu", label: "Conditions générales d'utilisation",
   },
 ];
 
@@ -455,30 +457,92 @@ Pour en savoir plus sur la gestion de vos données et vos droits, veuillez consu
       title: "Politique de confidentialité",
       data: [
         {
-          title: "1. Introduction",
-          content: `Je respecte votre vie privée et je m'engage à protéger vos informations personnelles. Cette politique de confidentialité décrit comment je collecte, utilise et protège les données que vous me fournissez lorsque vous utilisez ce site.`,
+          title: "1. OBJECTIF ET CHAMP D'APPLICATION",
+          content: `Novai Agency accorde la plus grande importance à la protection de la vie privée et des données à caractère personnel. La présente politique de confidentialité a pour objectif de vous informer sur nos pratiques concernant la collecte, l'utilisation et le partage des informations que vous nous fournissez dans le cadre de l'utilisation de nos solutions d'IA et d'automatisation.
+          Cette politique s'applique à l'ensemble des services proposés par Novai Agency et respecte les dispositions du Règlement (UE) 2016/679 du 27 avril 2016 (RGPD) et de la loi française n°78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés.`,
         },
         {
-          title: "2. Données collectées",
-          content: `Je collecte uniquement des données anonymisées via Vercel Analytics pour suivre l'activité du site et améliorer ses performances. Les paiements effectués via Stripe Checkout sont soumis à la politique de confidentialité de Stripe.`,
+          title: "2. RESPONSABLE DE TRAITEMENT",
+          content: `Dans le cadre de nos services, nous collectons et traitons des données à caractère personnel en lien avec vous. Pour l'ensemble de ces traitements, Novai Agency, dont le siège social est situé à [adresse à compléter], agit en qualité de responsable de traitement au sens du RGPD.`,
         },
         {
-          title: "3. Finalité du traitement des données",
-          content: `Les données collectées sont utilisées pour :
-          - Analyser le trafic et améliorer le contenu du site.
-          - Assurer un processus de paiement sécurisé avec Stripe.`,
+          title: "3. DONNÉES COLLECTÉES",
+          content: `Données fournies directement
+          Lorsque vous utilisez nos services, nous collectons les informations que vous nous fournissez volontairement :
+          Informations d'identification (nom, prénom, email professionnel)
+          Coordonnées professionnelles (fonction, société, téléphone)
+          Contenus et données que vous choisissez de traiter via nos solutions d'IA`,
         },
         {
-          title: "4. Partage des données",
-          content: `Je ne partage pas vos données personnelles avec des tiers, à l'exception des services nécessaires au fonctionnement du site, tels que Stripe et Vercel.`,
+          title: "4. Données collectées automatiquement",
+          content: `Certaines données sont automatiquement collectées lors de votre utilisation de nos solutions :
+          Données de connexion (adresse IP, date et heure, pages consultées)
+          Informations sur votre appareil (type, système d'exploitation, navigateur)
+          Données d'utilisation des solutions d'IA et d'automatisation
+          Journaux d'activité et statistiques d'utilisation`,
         },
         {
-          title: "5. Vos droits",
-          content: `Conformément au RGPD, vous avez le droit d'accéder, de corriger ou de demander la suppression des données vous concernant. Pour exercer ces droits, vous pouvez me contacter à l'adresse suivante : im.sejiux@gmail.com.`,
+          title: "5. FINALITÉS DU TRAITEMENT",
+          content: `Vos données personnelles sont collectées et traitées pour les finalités suivantes :
+          Fournir, maintenir et améliorer nos solutions d'IA et d'automatisation
+          Personnaliser votre expérience utilisateur
+          Assurer la sécurité de nos services et détecter les utilisations frauduleuses
+          Analyser l'utilisation de nos solutions pour en améliorer les performances
+          Communiquer avec vous concernant votre compte ou vos demandes de support
+          Vous informer des mises à jour, nouvelles fonctionnalités ou offres complémentaires
+          Respecter nos obligations légales et réglementaires.`,
         },
         {
-          title: "6. Sécurité",
-          content: `Je mets en œuvre des mesures de sécurité pour protéger vos données contre tout accès non autorisé.`,
+          title: "6. BASES LÉGALES DU TRAITEMENT",
+          content: `Nous traitons vos données personnelles sur la base des fondements juridiques suivants :
+          L'exécution du contrat conclu avec vous ou votre entreprise
+          Notre intérêt légitime à développer et améliorer nos solutions
+          Votre consentement, lorsque celui-ci est requis par la réglementation
+          Le respect de nos obligations légales.`,
+        },
+        {
+          title: "7. DESTINATAIRES DES DONNÉES",
+          content: ` Vos données personnelles peuvent être partagées avec :
+          Notre personnel autorisé, dans la limite de leurs attributions
+          Nos sous-traitants techniques (hébergement, maintenance, support)
+          Nos prestataires de services, agissant en tant que sous-traitants au sens du RGPD
+          Les autorités compétentes, en cas d'obligation légale ou de demande judiciaire
+          Nous nous assurons que l'ensemble de ces destinataires présentent des garanties suffisantes quant à la protection de vos données.`,
+        },
+        {
+          title: "8. TRANSFERT DES DONNÉES",
+          content: ` Les données que nous collectons peuvent être transférées et stockées dans des pays situés en dehors de l'Union Européenne. Dans ce cas, nous prenons toutes les mesures nécessaires pour garantir un niveau de protection adéquat de vos données, conformément aux exigences du RGPD (clauses contractuelles types, décisions d'adéquation, etc.)`,
+        },
+        {
+          title: "9. DURÉE DE CONSERVATION",
+          content: ` Vos données personnelles sont conservées pour une durée limitée et proportionnée aux finalités pour lesquelles elles ont été collectées :
+          Données de compte : pendant la durée de votre relation contractuelle avec nous, puis archivées selon les délais légaux applicables
+          Données d'utilisation : jusqu'à 12 mois après votre dernière activité
+           de facturation : 10 ans, conformément aux obligations légales
+          Données de navigation : 13 mois maximum.`,
+        },
+        {
+          title: "10. DROITS DES PERSONNES",
+          content: ` Conformément à la réglementation applicable, vous disposez des droits suivants concernant vos données personnelles :
+          Droit d'accès et de rectification
+          Droit à l'effacement (droit à l'oubli)
+          Droit à la limitation du traitement
+          Droit à la portabilité des données
+          Droit d'opposition au traitement
+          Droit de définir des directives relatives au sort de vos données après votre décès
+          Pour exercer vos droits, vous pouvez contacter notre Délégué à la Protection des Données par email à novai.agency25@gmail.com ou par courrier à l'adresse de notre siège social.`,
+        },
+        {
+          title: "11. SÉCURITÉ DES DONNÉES",
+          content: ` Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données contre toute perte, accès non autorisé, divulgation, altération ou destruction. Ces mesures incluent le chiffrement des données, les contrôles d'accès, les audits de sécurité réguliers et la formation de notre personnel.`,
+        },
+        {
+          title: "12. SPÉCIFICITÉS LIÉES À L'IA",
+          content: ` Nos solutions d'IA et d'automatisation peuvent impliquer des traitements particuliers, comme l'apprentissage automatique ou l'analyse prédictive. Dans ces cas :
+          Nous privilégions l'utilisation de données pseudonymisées ou anonymisées
+          Nous appliquons des mesures de protection spécifiques aux données utilisées pour l'entraînement des modèles d'IA
+          Nous mettons en place des contrôles pour limiter les biais algorithmiques
+          Nous documentons les décisions automatisées significatives et préservons un droit d'intervention humaine.`,
         },
       ],
     };
@@ -487,34 +551,75 @@ Pour en savoir plus sur la gestion de vos données et vos droits, veuillez consu
       title: "Conditions générales de vente",
       data: [
         {
-          title: "1. Objet",
-          content: `Les présentes conditions générales régissent la vente des services et produits proposés sur ce site.`,
+          title: "ARTICLE 1 - PRÉAMBULE",
+          content: `Les présentes Conditions Générales de Vente (ci-après "CGV") s'appliquent à toutes commandes de services d'intégration de solutions d'intelligence artificielle et d'automatisation effectuées auprès de Novai Agency (ci-après "le Prestataire"), sur le territoire français et international. Ces CGV peuvent être aménagées par des conditions particulières conclues entre les parties dans le cadre d'un contrat spécifique ou d'un devis. À défaut de dispositions particulières stipulées par écrit, le fait de passer commande implique l'acceptation pleine et entière des présentes CGV. Le Prestataire se réserve la faculté de modifier ses CGV à tout moment, les nouvelles conditions s'appliquant à toute nouvelle commande.`,
         },
         {
-          title: "2. Tarification",
-          content: `Les prix des produits sont indiqués en euros et peuvent être modifiés à tout moment. Les paiements sont traités via Stripe Checkout.`,
+          title: "ARTICLE 2 - DESCRIPTION DES SERVICES",
+          content: `Les services proposés par Novai Agency comprennent notamment :
+          Création d'automatisations pour optimiser les processus d'affaires
+          Développement et intégration d'agents IA (chatbots, assistants virtuels, etc.)
+          Intégration de solutions IA dans les systèmes existants du Client
+          Conseil en stratégie d'automatisation et IA
+          Maintenance et support technique proposés exclusivement aux clients abonnés mensuellement.
+          Le Prestataire s'engage à mettre en œuvre son expertise pour concevoir et intégrer des solutions adaptées aux besoins spécifiques du Client, dans le cadre d'une obligation de moyens visant à garantir un service optimal.`,
         },
         {
-          title: "3. Commande et paiement",
-          content: `La commande est validée une fois que vous avez été redirigé vers Stripe Checkout et que le paiement est effectué sur leur plateforme sécurisée.`,
+          title: "ARTICLE 3 - MODALITÉS DE COMMANDE ET TARIFS",
+          content: `Les prix applicables sont ceux en vigueur à la date de signature du devis. Ils sont mentionnés en euros HT et TTC et sont disponibles sur demande.
+          Le Client doit retourner le bon de commande signé dans les 15 jours ouvrables suivant sa réception (ou à la date de validité indiquée sur le devis). Ce bon de commande doit parvenir au Prestataire au moins 8 jours ouvrables avant la date de début prévue des prestations. En l'absence de retour dans les délais, le Prestataire se réserve le droit de considérer la commande comme non acceptée.`,
         },
         {
-          title: "4. Droit de rétractation",
-          content: `Conformément à la législation en vigueur, vous disposez d'un délai de 14 jours pour exercer votre droit de rétractation.`,
+          title: "ARTICLE 4 - FACTURATION ET RÈGLEMENT",
+          content: `Le prix des services inclut les prestations détaillées dans le devis ainsi que les éventuels coûts d'achat de composants logiciels tiers nécessaires à l'intégration des solutions d'IA.
+          Les règlements doivent être effectués par virement bancaire à 30 jours maximum à compter de la date de facturation. À défaut de paiement dans les délais, une pénalité de retard égale à trois fois le taux d'intérêt légal sera appliquée, ainsi qu'une indemnité forfaitaire pour frais de recouvrement d'un montant de 40 euros.
+          Le Prestataire pourra exiger un acompte représentant une partie de la commande à la signature du bon de commande. En l'absence de ce règlement, le Prestataire peut suspendre les prestations sans préjudice de l'exigibilité du montant total de la commande.`,
         },
         {
-          title: "5. Litiges",
-          content: `En cas de litige, le tribunal compétent sera celui de Toulon.`,
+          title: "ARTICLE 5 - DÉVELOPPEMENT ET INTÉGRATION",
+          content: `5.1 Responsabilités du Client
+          Le Client est seul responsable des informations, accès et outils nécessaires au bon déroulement de la mission. Il garantit être titulaire des droits de propriété intellectuelle sur les contenus, données et codes informatiques transmis au Prestataire.
+          5.2 Recette et validation des livrables
+          Les solutions d'IA et d'automatisation feront l'objet d'une procédure de recette permettant au Client de contrôler la conformité des prestations. Cette recette se déroule en deux phases :
+          Une recette provisoire par la signature d'un procès-verbal après tests et validation
+          Une recette définitive intervenant dans un délai d'un mois après la signature du procès-verbal provisoire
+          Aucune recette ne pourra avoir lieu tacitement. Le déploiement du livrable par le Client aura valeur de reconnaissance de conformité des prestations.`,
+        },
+        {
+          title: "ARTICLE 6 - PROPRIÉTÉ INTELLECTUELLE",
+          content: `Les automatisations et agents IA sont créés sur le compte interne unique de Novai Agency. Le Client reconnaît expressément qu'aucun accès au code source, aux comptes ou aux paramètres internes ne pourra lui être fourni, même en cas de redressement judiciaire, liquidation judiciaire ou cessation d'activité du Prestataire. Le Client bénéficie uniquement d'un droit d'utilisation des solutions mises à sa disposition dans le cadre de son abonnement.`,
+        },
+        {
+          title: "ARTICLE 7 - CALENDRIER D'EXÉCUTION",
+          content: `Le calendrier pour l'accomplissement des prestations est celui stipulé dans le devis ou la proposition commerciale. Compte tenu de la nature des prestations, les délais figurant dans ce calendrier sont indicatifs. Le Prestataire s'efforce de les respecter au mieux de ses moyens, mais n'encourt aucune responsabilité en cas de non-respect, sauf négligence grave.`,
+        },
+        {
+          title: "ARTICLE 8 - CONFIDENTIALITÉ",
+          content: `Pendant toute la durée du contrat et pendant une période de deux ans suivant sa résiliation, chacune des parties s'engage à ne pas divulguer d'informations confidentielles concernant l'autre partie à tout tiers sans accord préalable écrit, sauf dans les cas expressément prévus par la loi.
+          Les informations confidentielles comprennent notamment les technologies d'IA utilisées, les méthodes d'automatisation, les algorithmes, le savoir-faire, ainsi que les données des clients traitées par les solutions.`,
+        },
+        {
+          title: "ARTICLE 9 - RESPONSABILITÉ",
+          content: `La responsabilité du Prestataire est limitée aux dommages directs prouvés par le Client. En tout état de cause, le montant total des dommages et intérêts que le Prestataire pourrait être amené à verser ne pourra excéder 50% des sommes effectivement perçues au titre du contrat concerné durant les trois derniers mois précédant l'incident.`,
+        },
+        {
+          title: "ARTICLE 10 - RÉSILIATION ET RENOUVELLEMENT",
+          content: `Le service est proposé sous forme d'abonnement mensuel. Le Client peut résilier son abonnement directement depuis son espace client sur le site web de Novai Agency ou en adressant une demande par email à l'adresse indiquée dans l'article 10. Toute demande de résiliation prendra effet à la fin du mois en cours si elle est reçue au moins 15 jours avant la fin du mois concerné.`,
         },
       ],
     };
-  case "cookie-policy":
+  case "cgu":
     return {
-      title: "Politique de cookies",
+      title: "Conditions Générales d'Utilisation (CGU)",
       data: [
         {
-          title: "1. Utilisation des cookies",
-          content: `Je n'utilise pas de cookies pour collecter des données personnelles. Toutefois, des cookies techniques peuvent être utilisés pour améliorer la navigation et la performance du site.`,
+          title: "ARTICLE 1 - PRÉAMBULE ET DÉFINITIONS",
+          content: `Les présentes Conditions Générales d'Utilisation (ci-après "CGU") régissent l'accès et l'utilisation des services de Novai Agency, notamment les solutions d'intelligence artificielle et d'automatisation proposées par le Prestataire6.
+          Dans les présentes CGU, les termes suivants ont la signification qui leur est donnée ci-après :
+          "Solution d'IA" : toute technologie, application ou plateforme intégrant des capacités d'intelligence artificielle
+          "Automatisation" : ensemble des processus techniques permettant l'exécution automatisée de tâches
+          "Agent IA" : programme informatique autonome utilisant l'intelligence artificielle pour interagir et exécuter des tâches
+          "Utilisateur" : toute personne physique ou morale accédant aux solutions d'IA et d'automatisation.`,
         },
         {
           title: "2. Cookies tiers",
