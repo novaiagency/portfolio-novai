@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "novaiagency",
-=======
-  "name": "sejiux",
->>>>>>> 0168cb42bd5e30be4da577893f197326bafd9d42
   "version": "0.1.0",
   "private": true,
   "scripts": {

@@ -1,14 +1,14 @@
 import { Suspense } from "react";
 import { JsonLd } from 'react-schemaorg';
 import HeaderPage from "@/components/Header";
-import Services from "@/components/Services";
 import Tools from "@/components/Tools";
 import Processus from "@/components/Processus";
 import Price from "@/components/Price";
-import Benefit from "@/components/Benefit";
 import About from "@/components/About";
-import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
+import Services from "@/components/Services";
+import Benefit from "@/components/Benefit";
+import FAQ from "@/components/FAQ";
 
 /* export const runtime = 'edge'; */
 // const Header = dynamic(() => import("@/components/Header"));
@@ -29,7 +29,6 @@ export default function Home() {
       item={{
         "@context": "https://schema.org",
         "@type": "Organization",
-<<<<<<< HEAD
         name: "novaiagency",
         url: "https://novai.agency/",
         logo: "https://novai.agency/images/novai.png",
@@ -38,27 +37,12 @@ export default function Home() {
           "https://x.com/NovaiAgency",
           "https://github.com/novaiagency",
           "https://www.linkedin.com/company/novaiagency",
-=======
-        name: "sejiux",
-        url: "https://novai.agency/",
-        logo: "https://sejiux.com/images/sejiux.webp",
-        description: "Je crée des boutiques en ligne headless sur mesure, combinant design unique et performance.",
-        sameAs: [
-          "https://x.com/NovaiAgency",
-          "https://github.com/sejiux",
-          "https://www.linkedin.com/company/novaiagency",
-          "https://medium.com/@selimbaouz",
->>>>>>> 0168cb42bd5e30be4da577893f197326bafd9d42
           "https://www.instagram.com/novai_agency",
           "https://www.facebook.com/people/Novai-Agency/61572557372194",
         ]
       }}
-<<<<<<< HEAD
     />
   </>;
-=======
-    /></>;
->>>>>>> 0168cb42bd5e30be4da577893f197326bafd9d42
   
   return (
     <div className="space-y-24 lg:space-y-44">

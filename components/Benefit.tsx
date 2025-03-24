@@ -50,13 +50,8 @@ const Benefit = () => {
           "lg:px-0 lg:text-4xl",
           "xl:text-5xl xl:leading-[1.4] xl:text-left",
           "pointer-events-none whitespace-pre-wrap",
-<<<<<<< HEAD
         )}>Votre temps est précieux, l’IA le protège</h2>
         <p className={cn("text-base text-center text-subtitle/80 font-light w-full px-4", "lg:text-base lg:w-[500px] lg:mx-auto", "xl:mx-0 xl:text-left xl:px-0 xl:pb-2 xl:text-lg xl:leading-relaxed")}>Boostez votre productivité avec des agents IA intelligents et des workflows automatisés sur mesure.</p>
-=======
-        )}>Novai Agency : Votre temps est précieux, l’IA le protège</h2>
-        <p className={cn("text-base text-center text-subtitle/80 font-light w-full px-4", "lg:text-base lg:w-[500px] lg:mx-auto", "xl:mx-0 xl:text-left xl:px-0 xl:pb-2 xl:text-lg xl:leading-relaxed")}>Transformez l'expérience d'achat en ligne de votre marque avec des avantages qui propulsent votre boutique.</p>
->>>>>>> 0168cb42bd5e30be4da577893f197326bafd9d42
         <div className={cn("flex items-center flex-wrap gap-4")}>
           {[
             {title: "Une personnalisation sans limites"},

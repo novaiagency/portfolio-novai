@@ -3,14 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-<<<<<<< HEAD
 Host: https://novai.agency
 
 # Sitemaps
 Sitemap: https://novai.agency/sitemap.xml
-=======
-Host: https://sejiux.com
-
-# Sitemaps
-Sitemap: https://sejiux.com/sitemap.xml
->>>>>>> 0168cb42bd5e30be4da577893f197326bafd9d42
