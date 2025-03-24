@@ -42,7 +42,9 @@ const CardPrice: FC<CardPriceProps> = ({
         <div className={cn("space-y-2 py-4")}>
           {options?.map((option, index) => (
             <div key={index} className={cn('flex items-center mx-auto gap-4', "lg:mx-0")}>
-              <FaCheckCircle className='text-primary text-xl' />
+              <div>
+                <FaCheckCircle className='text-primary text-xl'/>
+              </div>
               <div className={cn("text-base text-subtitlePrice font-medium")}>{option.title}</div>
             </div>
           ))}

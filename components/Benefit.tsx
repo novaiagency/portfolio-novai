@@ -50,14 +50,14 @@ const Benefit = () => {
           "lg:px-0 lg:text-4xl",
           "xl:text-5xl xl:leading-[1.4] xl:text-left",
           "pointer-events-none whitespace-pre-wrap",
-        )}>Votre temps est précieux, l’IA le protège</h2>
-        <p className={cn("text-base text-center text-subtitle/80 font-light w-full px-4", "lg:text-base lg:w-[500px] lg:mx-auto", "xl:mx-0 xl:text-left xl:px-0 xl:pb-2 xl:text-lg xl:leading-relaxed")}>Boostez votre productivité avec des agents IA intelligents et des workflows automatisés sur mesure.</p>
+        )}>Gagnez du temps et boostez votre efficacité</h2>
+        <p className={cn("text-base text-center text-subtitle/80 font-light w-full px-4", "lg:text-base lg:w-[500px] lg:mx-auto", "xl:mx-0 xl:text-left xl:px-0 xl:pb-2 xl:text-lg xl:leading-relaxed")}>L’IA gère les tâches répétitives, vous permettant de vous concentrer sur l’essentiel.</p>
         <div className={cn("flex items-center flex-wrap gap-4")}>
           {[
-            {title: "Une personnalisation sans limites"},
-            {title: "Un accompagnement dédié"},
-            {title: "Des tarifs flexibles"},
-            {title: "Des solutions évolutives"},
+            {title: "Des solutions sur mesure"},
+            {title: "Accompagnement personnalisé"},
+            {title: "Tarifs flexibles"},
+            {title: "Évolutivité garantie"},
           ].map((data, index) => (
             <div key={index} className={cn('flex items-center mx-auto gap-2', "xl:mx-0")}>
               <FaCheckCircle className='text-primary text-xl' />

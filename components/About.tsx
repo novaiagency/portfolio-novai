@@ -1,65 +1,81 @@
 import { cn } from '@/lib/utils';
-import Link from 'next/link';
-import AboutMePicture from "@/public/images/sejiux_about.webp";
+import Emre from "@/public/images/emre.webp";
+import Selim from "@/public/images/sejiux_about.webp";
+import AgentIa from "@/public/images/agentia.webp";
 import Image from 'next/image';
-import { FaXTwitter } from 'react-icons/fa6';
+import { Button } from './ui/moving-border';
+import AnimatedShinyText from './ui/animated-shiny-text';
 
 const About = () => {
   return (
-    <section id="about" className={cn("px-6 flex flex-col justify-center space-y-14 max-w-7xl mx-auto", "md:mx-auto md:max-w-lg", "lg:max-w-2xl", "xl:max-w-7xl xl:px-0 xl:space-y-0 xl:grid xl:grid-cols-2 xl:items-center xl:justify-between")}>
-      <Image loading="lazy" src={AboutMePicture} alt="About me" width={675} height={675} className={cn("aspect-ratio rounded-3xl border-2 border-neutral-600/30")} />
-      <div className={cn("space-y-6", "xl:px-14 xl:space-y-8")}>
-        <div className={cn("space-y-4", "lg:space-y-6")}>
-          <h2 className={cn(
-            "text-xl leading-normal font-medium",
-            "text-white/80",
-            "lg:text-4xl",
-            "xl:px-0 xl:text-3xl xl:leading-[1.4]",
-            "pointer-events-none whitespace-pre-wrap",
-          )}>Derrière Novai Agency :</h2>
-          <p className={cn("font-black text-2xl", "lg:text-2xl")}>Emre : CEO <br /> Sélim : CTO <br /> Secretair-IA : Assistant IA  </p>
-        </div>
-        <div className={cn("flex items-center flex-wrap gap-3")}>
-          {[
-            {title: "Automatisations Intelligentes"},
-            {title: "Agent IA Personnalisé"},
-          ].map((data, index) => (
-            <div key={index} className={cn("text-sm bg-gradient-to-b from-background to-[#151518] border border-neutral-600/30 px-4 py-2 rounded-full", "lg:text-base")}>{data.title}</div>
-          ))}
-        </div>
-        <p className={cn("text-base font-light w-full", "lg:text-left lg:text-base text-subtitleCard lg:w-[500px]", "xl:px-0 xl:pb-2 xl:text-lg xl:leading-relaxed")}>
-        Chez Novai Agency, nous aidons les entreprises à se démarquer grâce à des stratégies digitales innovantes et personnalisées. Notre équipe passionnée met son expertise au service de votre croissance, en créant des expériences uniques qui génèrent du résultat.
-        Notre mission est simple : transformer votre vision en succès concret. Nous croyons en la créativité, l'efficacité et la transparence pour bâtir des relations durables avec nos clients.<br />Prêt à passer au niveau supérieur ? Rejoignez-nous dès aujourd'hui !</p>
-        <div className={cn("pt-4 flex flex-col items-center gap-4", "lg:flex-row")}>
-          <Link href="https://calendly.com/novai-agency25/30min" rel="preload" target="_blank"
+    <section id="about" className={cn("relative flex flex-col justify-center max-w-7xl mx-auto items-center")}>
+      <div className={cn("px-6 text-center space-y-6", "md:mx-auto md:max-w-lg", "lg:max-w-2xl lg:mx-auto", "xl:px-10 xl:max-w-full")}>
+        <div className="flex items-center justify-center">
+          <div
             className={cn(
-              "text-white flex gap-2 items-center font-medium", 
-              "w-full h-12 mx-auto",
-              "md:h-14",
-              "lg:mx-0",
-              "xl:w-60 xl:h-14 p-[1px]",
-              "*:transition ease-out *:hover:duration-300 *:hover:text-white", 
-              "transition-all ease-in ",
-              "bg-gradient-to-b from-primary to-secondary flex items-center justify-center text-base antialiased rounded-[10px]",
-              "hover:bg-primary hover:shadow-custom-primary",
-            )}>
-            Réserver votre appel
-          </Link>
-          <Link href="https://x.com/NovaiAgency" target="_blank" rel="preload"
-            className={cn(
-              "text-white flex gap-2 items-center", 
-              "w-full h-12 mx-auto",
-              "md:h-14",
-              "lg:mx-0",
-              "xl:w-60 xl:h-14 p-[1px]",
-              "*:transition ease-out *:hover:duration-300 *:hover:text-white", 
-              "transition-all ease-in ",
-              "border border-neutral-600/30 bg-gradient-to-bl from-neutral-600/30 to-[#151518] flex items-center justify-center text-base antialiased rounded-[10px]",
-              "hover:bg-backgroundSecondary hover:shadow-custom-background-secondary",
-            )}>
-            <FaXTwitter />
-                Suivez-nous
-          </Link>
+              "group rounded-full text-base text-white transition-all ease-in hover:cursor-pointer bg-transparent hover:bg-neutral-800 h-12",
+            )}
+          >
+            <Button
+              borderRadius="1.75rem"
+              className="bg-gradient-to-b from-background to-[#151518]"
+            >
+              <AnimatedShinyText
+                className={cn(
+                  "inline-flex items-center justify-center px-4 py-0 transition ease-out hover:duration-300 hover:text-neutral-400 text-white/70 font-normal",
+                  "text-sm",
+                  "md:text-sm",
+                )}>
+                <div className="px-2">
+                  <p className={cn("text-sm", "lg:text-base")}>
+                Qui sommes-nous ?
+                  </p>
+                </div>
+              </AnimatedShinyText>
+            </Button>
+          </div>
+        </div>
+        <h2 className={cn(
+          "text-[28px] px-2 leading-tight font-semibold ",
+          "lg:px-0 lg:text-[38px]",
+          "xl:px-0 xl:text-5xl xl:leading-[1.4]",
+          "pointer-events-none whitespace-pre-wrap",
+          "text-white text-center",
+        )}>Découvrez qui se cache<br className="hidden lg:block" /> dérrière Novai Agency</h2>
+        <p className={cn("text-subtitle/80 text-base font-light w-full px-4 pb-4", "lg:text-base lg:mx-auto lg:w-[500px]", "xl:px-0 xl:text-lg xl:leading-relaxed xl:w-[700px]")}>
+        2 humains et une IA, pour optimiser vos processus et booster votre performance.
+        </p>
+        <div className={cn("relative pt-14 w-full max-w-8xl flex flex-col gap-4", "xl:grid xl:grid-cols-3 xl:justify-between")}>
+          <div className='text-center space-y-4'>
+            <Image loading="lazy" src={Emre} alt="About me" width={675} height={675} className={cn("aspect-ratio rounded-3xl border-2 border-neutral-600/30 h-max")} />
+            <h6 className={cn("font-bold text-2xl")}>Emre</h6>
+            <p className={cn("font-medium text-lg")}>Fondateur & CEO</p>
+            <div className='px-4'>
+              <p className={cn("text-sm")}>
+              Emre, fondateur de Novai, est passionné par l’innovation et aide les entreprises à adopter des solutions d’IA et d’automatisation.
+              </p>
+            </div>
+          </div>
+          <div className='text-center space-y-4'>
+            <Image loading="lazy" src={Selim} alt="About me" width={675} height={675} className={cn("aspect-ratio rounded-3xl border-2 border-neutral-600/30 h-max")} />
+            <h6 className={cn("font-bold text-2xl")}>Selim</h6>
+            <p className={cn("font-medium text-lg")}>Co-Fondateur & CTO</p>
+            <div className='px-4'>
+              <p className={cn("text-sm")}>
+              Selim, notre responsable technologique, est un développeur passionné par l'IA, alliant stratégie et créativité pour concevoir des solutions innovantes.
+              </p>
+            </div>
+          </div>
+          <div className='text-center space-y-4'>
+            <Image loading="lazy" src={AgentIa} alt="About me" width={675} height={675} className={cn("aspect-ratio rounded-3xl border-2 border-neutral-600/30 h-max")} />
+            <h6 className={cn("font-bold text-2xl")}>Mar-IA</h6>
+            <p className={cn("font-medium text-lg")}>Assitante IA</p>
+            <div className='px-4'>
+              <p className={cn("text-sm")}>
+            Mar-IA, notre assistante IA, se distingue par son efficacité et sa capacité à intervenir rapidement pour optimiser vos processus.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

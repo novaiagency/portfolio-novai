@@ -8,7 +8,7 @@ import { FiZap } from "react-icons/fi";
 import { TfiBarChart } from "react-icons/tfi";
 import { HiOutlineCloudUpload } from "react-icons/hi";
 import { GiKey, GiPiggyBank } from "react-icons/gi";
-import { MdArticle, MdOutlineChatBubbleOutline, MdOutlineSend, MdOutlineSettings } from "react-icons/md";
+import { MdOutlineChatBubbleOutline, MdOutlineSend, MdOutlineSettings } from "react-icons/md";
 import { PiQuestionFill } from "react-icons/pi";
 import HomeHellopurly from "@/public/images/hellopurly-home.webp";
 import ProductHellopurly from "@/public/images/hellopurly-product.webp";
@@ -166,37 +166,37 @@ export const articlesData = [
 export const ProcessusData = [
   {
     title: "Analyse des besoins", 
-    content: "Identifier les tâches répétitives et les points de friction à automatiser..", 
+    content: "Identifier les tâches répétitives et les points de friction à automatiser.", 
     step: "1",
     icon: MdOutlineChatBubbleOutline, 
   },
   {
     title: "Définition des objectifs", 
-    content: "Clarifier les gains attendus (gain de temps, réduction d’erreurs, amélioration client, etc.)", 
+    content: "Clarifier les bénéfices attendus : gain de temps, réduction d’erreurs, etc.", 
     step: "2",
     icon: MdOutlineSettings, 
   },
   {
     title: "Choix des outils et intégrations", 
-    content: "Sélectionner les solutions adaptées (Make, ChatGPT, Apify, etc.)", 
+    content: "Sélectionner les solutions adaptées (Make, ChatGPT, Apify, etc.).", 
     step: "3",
     icon: AiOutlineSketch, 
   },
   {
     title: "Paramétrage et configuration", 
-    content: "Une fois les besoins définis, la configuration et l’optimisation des paramètres d’automatisation sont réalisées afin d’assurer un fonctionnement fluide et efficace. .", 
+    content: "Configurer et optimiser les paramètres pour un fonctionnement fluide.", 
     step: "4",
     icon: RiCodeSSlashLine, 
   },
   {
     title: "Tests et ajustements", 
-    content: "Vérifier le bon fonctionnement, identifier et corriger les éventuels blocages.", 
+    content: "Vérifier le bon fonctionnement et corriger les éventuels blocages.", 
     step: "5",
     icon: HiOutlineCloudUpload, 
   },
   {
     title: "Déploiement et suivi", 
-    content: "Assurer une gestion continue, des mises à jour et un support pour garantir une automatisation performante.", 
+    content: "Gérer l’évolution, les mises à jour et assurer un support continu.", 
     step: "6",
     icon: GiKey, 
   },
@@ -205,23 +205,23 @@ export const ProcessusData = [
 export const BenefitsData = [
   {
     symbole: "+", 
-    percentage: "30",
-    title: "Taux de Conversion", 
-  },
-  {
-    symbole: "+", 
     percentage: "50",
-    title: "Performances Optimisées", 
+    title: "Gain de productivité", 
   },
   {
     symbole: "+", 
     percentage: "40",
-    title: "Engagement Client", 
+    title: "Automatisation des processus", 
+  },
+  {
+    symbole: "+", 
+    percentage: "45",
+    title: "Efficacité des réponses", 
   },
   {
     symbole: "-", 
-    percentage: "80",
-    title: "coûts liés au service client", 
+    percentage: "70",
+    title: "Réduction des coûts opérationnels", 
   },
 ];
 
@@ -335,6 +335,40 @@ export const PricesFixeData = [
       },
     ], 
   },
+  {
+    title: "Offre avancée", 
+    content: "Utilisez l’IA pour le service client, les publicités dynamiques et l’optimisation SEO.",
+    link: "https://calendly.com/novai-agency25/30min",
+    options: [
+      {
+        title: "Mise en place de réponses automatiques aux emails clients"
+      },
+      {
+        title: "Automatisation des relances paniers abandonnés"
+      },
+      {
+        title: "Notifications automatiques sur les commandes"
+      },
+      {
+        title: "Ajout d’un chatbot pour le service client 24/7"
+      },
+      {
+        title: "Gestion automatisée du stock et création d’étiquettes d’expédition"
+      },
+      {
+        title: "Campagnes email marketing planifiées"
+      },
+      {
+        title: "Intégration complète d’un agent IA pour le service client (chatbot avancé)",
+      },
+      {
+        title: "Publicités dynamiques basées sur les données du stock",
+      },
+      {
+        title: "Optimisation SEO automatisée et surveillance concurrentielle",
+      },
+    ], 
+  },
 ];
 
 export const socialsData = [
@@ -366,11 +400,6 @@ export const linksData = [
     link: "/#faq", 
     label: "FAQ",
     icon: PiQuestionFill
-  },
-  {
-    link: "/#blog", 
-    label: "Blog",
-    icon: MdArticle
   },
 ];
 

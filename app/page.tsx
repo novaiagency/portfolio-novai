@@ -50,9 +50,9 @@ export default function Home() {
         <HeaderPage />
         <Services />
         <Tools />
-        <Processus />
-        <Price />
         <Benefit />
+        <Price />
+        <Processus />
         <About />
         <FAQ />
         <Footer />
