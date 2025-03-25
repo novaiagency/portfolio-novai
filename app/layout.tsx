@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     default: "Novai Agency | Agents & Automatisation IA",
     template: "%s | Novai Agency"
   },
-  description: "Optimisez vos processus avec des agents IA avancés et des automatisations intelligentes via Make et n8n, conçus pour booster votre productivité et efficacité.",
+  description: "Optimisez vos processus avec des agents IA avancés et des automatisations intelligentes, conçus pour booster votre productivité et efficacité.",
   keywords: ["automatisation IA", "agents IA", "Make", "n8n", "automatisation workflow", "intelligence artificielle", "bots IA", "productivité IA", "automatisation entreprise", "intégration IA"],
   authors: [{ name: "Novai Agency" }],
   creator: "Novai Agency",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     url: "https://novai.agency",
     siteName: "Novai Agency",
     title: "Novai Agency | Agents & Automatisation IA",
-    description: "Optimisez vos processus avec des agents IA avancés et des automatisations intelligentes via Make et n8n, conçus pour booster votre productivité et efficacité.",
+    description: "Optimisez vos processus avec des agents IA avancés et des automatisations intelligentes, conçus pour booster votre productivité et efficacité.",
     images: [
       {
         url: "https://novai.agency/images/og-image.webp",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     site: "@novaiagency",
     creator: "@novaiagency",
     title: "Novai Agency | Agents & Automatisation IA",
-    description: "Optimisez vos processus avec des agents IA avancés et des automatisations intelligentes via Make et n8n, conçus pour booster votre productivité et efficacité.",
+    description: "Optimisez vos processus avec des agents IA avancés et des automatisations intelligentes, conçus pour booster votre productivité et efficacité.",
     images: ["https://novai.agency/images/og-image.webp"],
   },
   verification: {
