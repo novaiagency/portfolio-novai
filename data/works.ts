@@ -1,4 +1,4 @@
-import { FaRocket} from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaRocket, FaXTwitter} from "react-icons/fa6";
 import { FaGithub, FaTwitter, FaFigma, FaPaintBrush, FaHeadphonesAlt, FaSearch, FaMoneyBillAlt } from "react-icons/fa";
 import { SiAirtable, SiNotion, SiOpenai, SiN8N, SiGoogle, SiCalendly, SiZapier, SiSlack, SiStripe, SiTwilio, SiDropbox, SiHubspot, SiMailchimp, SiSalesforce, SiWoocommerce, SiPaypal, SiTrello, SiClickup, SiGooglesheets, SiShopify } from "react-icons/si";
 import { RiCodeSSlashLine, RiHomeSmile2Fill, RiRobot2Fill, RiServiceFill, RiUser5Fill } from "react-icons/ri";
@@ -23,6 +23,7 @@ import BlogIp from "@/public/images/blog-ip.webp";
 import BlogListening from "@/public/images/blog-active-listening.webp";
 import BlogMindset from "@/public/images/blog-mindset.webp";
 import { IoMdTime } from "react-icons/io";
+import { link } from "fs";
 
 export const ServicesData = [
   {
@@ -373,10 +374,16 @@ export const PricesFixeData = [
 
 export const socialsData = [
   {
-    link: "https://github.com/novaiagency", icon: FaGithub, label: "Github",
+    link: "https://www.linkedin.com/company/novaiagency/?viewAsMember=true", icon: FaLinkedinIn, label: "Linkendin",
   },
   {
-    link: "https://x.com/NovaiAgency", icon: FaTwitter, label: "Twitter",
+    link: "https://www.instagram.com/novai_agency/", icon: FaInstagram, label: "Instagram",
+  },
+  {
+    link: "https://www.facebook.com/people/Novai-Agency/61572557372194/", icon: FaFacebookF, label: "Facebook",
+  },
+  {
+    link: "https://x.com/NovaiAgency", icon: FaXTwitter, label: "Twitter",
   }
 ];
 
